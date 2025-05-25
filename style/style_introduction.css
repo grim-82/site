@@ -67,3 +67,80 @@ h1 {
 .e-mail:hover {
     text-decoration: underline;
 }
+
+
+.container {
+    width: 100%;
+    max-width: 1288px;
+    margin: 0 auto;
+    padding: 0 24px;
+    overflow: hidden;
+    display: inline;
+    z-index: 1;
+}
+
+
+.mood-section-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.mood-section-card__photo {
+    width: 140px;
+    border-radius: 4px 4px 4px 200px;
+    box-shadow: -16px 16px 0 0,
+        -16px 16px 0 2px;
+}
+
+.mood-section-card__title {
+    margin-bottom: 16px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.mood-section-card__text {
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+.mood-section-card__text:last-child {
+    margin-bottom: 0px;
+}
+
+.mood-section__title {
+    position: relative;
+    margin: 0 auto 24px;
+    text-align: center;
+}
+
+.mood-section__title::before,
+.mood-section__title::after {
+    display: none;
+    position: absolute;
+    bottom: 24px;
+    width: 352px;
+    border: 2px solid;
+    content: '';
+    /* height: 2px;    background-color: gray; */
+}
+
+.mood-section__title::before {
+    left: 0;
+}
+
+.mood-section__title::after {
+    right: 0;
+}
+
+.mood-section__list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.mood-section__item {
+    flex-basis: calc((100% - 40px) / 2);
+}
